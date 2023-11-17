@@ -12,6 +12,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(seconds: 1), () {
+      debugDumpLayerTree();
+    });
     // Kraken kraken = Kraken(bundle: KrakenBundle.fromUrl('http://kraken.oss-cn-hangzhou.aliyuncs.com/demo/guide-styles.js'));
     return MaterialApp(
       title: 'Flutter Demo',
